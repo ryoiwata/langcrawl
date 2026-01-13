@@ -38,3 +38,13 @@ conda install conda-forge::langchain-community --yes
 # Used for loading MCP server tools (e.g., Firecrawl scraping tools) into LangChain-compatible format
 # Enables agents to use MCP tools via the load_mcp_tools function
 conda install conda-forge::langchain-mcp-adapters --yes
+
+# firecrawl-py: Python SDK for Firecrawl API
+# Provides direct Python integration for web scraping and crawling functionality
+# Used for programmatic access to Firecrawl's scraping capabilities (alternative to MCP server)
+pip install firecrawl-py
+
+# pydantic: Data validation library using Python type annotations
+# Required dependency for LangChain and other packages in the ecosystem
+# Provides runtime type checking and data validation for structured data
+conda install conda-forge::pydantic --yes
